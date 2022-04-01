@@ -1,0 +1,45 @@
+{
+  "name": "@stdlib/random-iter-mt19937",
+  "version": "0.0.0",
+  "description": "Create an iterator for a 32-bit Mersenne Twister pseudorandom number generator.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/random-iter-mt19937.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "statistics",
+    "stats",
+    "prng",
+    "rng",
+    "pseudorandom",
+    "random",
+    "rand",
+    "discrete",
+    "integer",
+    "randint",
+    "randu",
+    "uniform",
+    "generator",
+    "mersenne",
+    "twister",
+    "mt19937",
+    "seed",
+    "seedable",
+    "iterator",
+    "iterable"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
