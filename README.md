@@ -35,38 +35,32 @@ limitations under the License.
 
 > Create an iterator for a 32-bit [Mersenne Twister][mersenne-twister] pseudorandom number generator.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-iter-mt19937
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterator = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-mt19937@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterator = require( 'path/to/vendor/umd/random-iter-mt19937/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-mt19937@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterator;
-})();
-</script>
+var iterator = require( '@stdlib/random-iter-mt19937' );
 ```
 
 #### iterator( \[options] )
@@ -203,13 +197,8 @@ The returned iterator protocol-compliant object has the following properties:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-mt19937@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var iterator = require( '@stdlib/random-iter-mt19937' );
 
 var it;
 var r;
@@ -228,11 +217,6 @@ while ( true ) {
     }
     console.log( r.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -309,8 +293,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-iter-mt19937.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-iter-mt19937
 
-[test-image]: https://github.com/stdlib-js/random-iter-mt19937/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/random-iter-mt19937/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/random-iter-mt19937/actions/workflows/test.yml/badge.svg?branch=v0.2.0
+[test-url]: https://github.com/stdlib-js/random-iter-mt19937/actions/workflows/test.yml?query=branch:v0.2.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-iter-mt19937/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-iter-mt19937?branch=main
@@ -333,8 +317,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/random-iter-mt19937/tree/deno
+[deno-readme]: https://github.com/stdlib-js/random-iter-mt19937/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/random-iter-mt19937/tree/umd
+[umd-readme]: https://github.com/stdlib-js/random-iter-mt19937/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/random-iter-mt19937/tree/esm
+[esm-readme]: https://github.com/stdlib-js/random-iter-mt19937/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/random-iter-mt19937/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-iter-mt19937/main/LICENSE
@@ -343,19 +330,19 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [@matsumoto:1998a]: https://doi.org/10.1145/272991.272995
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937/tree/umd
+[@stdlib/random/base/mt19937]: https://github.com/stdlib-js/random-base-mt19937
 
-[@stdlib/random/iter/minstd]: https://github.com/stdlib-js/random-iter-minstd/tree/umd
+[@stdlib/random/iter/minstd]: https://github.com/stdlib-js/random-iter-minstd
 
-[@stdlib/random/iter/minstd-shuffle]: https://github.com/stdlib-js/random-iter-minstd-shuffle/tree/umd
+[@stdlib/random/iter/minstd-shuffle]: https://github.com/stdlib-js/random-iter-minstd-shuffle
 
-[@stdlib/random/iter/randi]: https://github.com/stdlib-js/random-iter-randi/tree/umd
+[@stdlib/random/iter/randi]: https://github.com/stdlib-js/random-iter-randi
 
-[@stdlib/random/iter/randu]: https://github.com/stdlib-js/random-iter-randu/tree/umd
+[@stdlib/random/iter/randu]: https://github.com/stdlib-js/random-iter-randu
 
 <!-- </related-links> -->
 
